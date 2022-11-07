@@ -6,7 +6,7 @@
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .bg-image {
@@ -112,4 +112,10 @@
 #quote {
   position: absolute;
   bottom: 25px;
+}
+
+#greeting {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 600;
 }
