@@ -1,14 +1,9 @@
 @import "reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap");
 
-.body {
-  background-color: black;
-}
-
 .hidden {
   display: none !important;
 }
-
 .bg-image {
   z-index: -1;
   width: 100vw;
@@ -18,7 +13,6 @@
   left: 0px;
   filter: brightness(60%);
 }
-
 #main-part {
   display: flex;
   flex-direction: column;
@@ -26,14 +20,12 @@
   align-items: center;
   height: 100vh;
 }
-
 #todo-form {
   position: absolute;
   right: 85px;
   top: 10px;
   width: 100px;
 }
-
 #todo-form input {
   background-color: transparent;
   border: solid 1px;
@@ -45,12 +37,30 @@
   font-family: "Montserrat", sans-serif;
   margin-bottom: 7px;
 }
-
 #todo-form input::placeholder {
   font-family: "Montserrat", sans-serif;
   color: whitesmoke;
 }
-
+#todo-list {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+#todo-list li {
+  margin-left: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#todo-list li span {
+  color: whitesmoke;
+  font-size: 15px;
+  margin-right: 5px;
+}
+#todo-list li button {
+  background-color: transparent;
+  border: none;
+}
 #clock,
 #login-form,
 #greeting,
@@ -59,12 +69,10 @@
   font-family: "Montserrat", sans-serif;
   color: whitesmoke;
 }
-
 #clock {
   margin-top: 20px;
   font-size: 80px;
 }
-
 #login-form {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -73,7 +81,6 @@
   justify-content: center;
   align-items: center;
 }
-
 #login-form input:first-child {
   background-color: transparent;
   opacity: 0.8;
@@ -87,7 +94,6 @@
   color: whitesmoke;
   font-family: "Montserrat", sans-serif;
 }
-
 #login-form input:last-child {
   background-color: transparent;
   color: whitesmoke;
@@ -98,49 +104,21 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
-
 #login-form input::placeholder {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: whitesmoke;
 }
-
 #weather {
   position: absolute;
   bottom: 50px;
 }
-
 #quote {
   position: absolute;
   bottom: 25px;
 }
-
 #greeting {
   margin-top: 20px;
   font-size: 30px;
   font-weight: 600;
-}
-
-#todo-list {
-  position: absolute;
-  top: 40px;
-  right: 120px;
-}
-
-#todo-list li {
-  margin-left: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#todo-list li span {
-  color: whitesmoke;
-  font-size: 15px;
-  margin-right: 5px;
-}
-
-#todo-list li button {
-  background-color: transparent;
-  border: none;
 }
